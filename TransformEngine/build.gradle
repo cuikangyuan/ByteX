@@ -11,4 +11,7 @@ dependencies {
     compile project(':GradleToolKit')
 }
 
+sourceCompatibility = "$java_version"
+targetCompatibility = "$java_version"
+
 apply from: rootProject.file('gradle/publish.gradle')

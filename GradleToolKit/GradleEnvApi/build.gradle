@@ -6,7 +6,7 @@ dependencies {
     compileOnly gradleApi()
     compileOnly "com.android.tools.build:gradle:$gradle_version"
 }
-sourceCompatibility = "1.8"
-targetCompatibility = "1.8"
+sourceCompatibility = "$java_version"
+targetCompatibility = "$java_version"
 
 apply from: rootProject.file('gradle/publish.gradle')

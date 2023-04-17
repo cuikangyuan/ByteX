@@ -41,6 +41,7 @@ ext {
     ByteX_Version = upload_version
     gradle_compat_version = "1.1.0.2"
     bintray_key = BINTRAY_KEY
+    java_version = '8'
 }
 println("upload2Maven:$upload2Maven")
 println("useSnapshot:$useSnapshot")

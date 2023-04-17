@@ -4,3 +4,5 @@ dependencies {
     implementation project(':ProguardConfigurationResolver-task')
     implementation project(':ProguardConfigurationResolver-transform')
 }
+sourceCompatibility = "$java_version"
+targetCompatibility = "$java_version"

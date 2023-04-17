@@ -7,5 +7,6 @@ dependencies {
     compileOnly "com.android.tools.build:gradle:3.5.3"
     implementation project(":ProguardConfigurationResolver")
 }
-
+sourceCompatibility = "$java_version"
+targetCompatibility = "$java_version"
 apply from: rootProject.file('gradle/publish.gradle')

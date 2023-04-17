@@ -5,3 +5,5 @@ apply from: rootProject.file('gradle/publish.gradle')
 dependencies {
     compileOnly gradleApi()
 }
+sourceCompatibility = "$java_version"
+targetCompatibility = "$java_version"
