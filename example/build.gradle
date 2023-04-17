@@ -100,3 +100,19 @@ dependencies {
     implementation "com.bytedance.android.byteX:coverage-lib:${plugin_version}"
 }
 apply from: project.file('plugin-bytex.gradle')
+
+gradle.taskGraph.afterTask { task ->
+    try {
+        println("---- task name:" + task.name)
+        println("-------- inputs:")
+        task.inputs.files.each { it ->
+            println(it.absolutePath)
+        }
+        println("-------- outputs:")
+        task.outputs.files.each { it ->
+            println(it.absolutePath)
+        }
+    } catch (Exception e) {
+
+    }
+}
